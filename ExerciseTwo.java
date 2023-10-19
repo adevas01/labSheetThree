@@ -30,15 +30,12 @@ public class ExerciseTwo {
     Method rotate
     
     */
-    public static double[] rotate(double[] x) {
-      if (x.length <= 1) {
-        return x;
-      }      
-      double last = x[x.length - 1];
+    public static double[] rotate(double[] x) {     
+      double last = x[x.length - 1];      
       for (int i = x.length - 1; i > 0; i--) {
         x[i] = x[i - 1];
       }
-      x[0] = last;
+      x[0] = last;      
       return x;
     }
   }
